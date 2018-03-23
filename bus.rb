@@ -25,5 +25,8 @@ class Bus
     @passengers.slice!(index, 1)
   end
 
+  def empty
+    @passengers.clear
+  end
 
 end
