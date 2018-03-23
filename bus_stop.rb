@@ -7,4 +7,8 @@ class BusStop
     @queue = []
   end
 
+  def queue_length
+    return @queue.length
+  end
+
 end

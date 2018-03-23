@@ -15,4 +15,8 @@ class BusStopTest < MiniTest::Test
     assert_equal(BusStop, @stop.class)
   end
 
+  def test_queue_starts_empty
+    assert_equal(0, @stop.queue_length)
+  end
+
 end
