@@ -15,4 +15,8 @@ class BusStop
     @queue.push(person)
   end
 
+  def clear_queue
+    @queue.clear
+  end
+
 end
