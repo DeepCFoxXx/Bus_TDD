@@ -58,4 +58,12 @@ class BusTest < MiniTest::Test
     assert_equal(0, @bus.passenger_count)
   end
 
+  def test_pick_up_from_stop
+    @stop1 = BusStop.new("Foot Of The Walk")
+    @stop1.add_to_queue(@passenger1)
+    @bus.pick_up_from_stop(@stop1)
+    assert_equal(1, @bus.passenger_count)
+    assert_equal(0, @stop1.queue_length)
+  end
+
 end
