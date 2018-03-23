@@ -9,7 +9,11 @@ class PersonTest < MiniTest::Test
   end
 
   def test_can_create_person
-    assert_equal(Person, @person.class())
+    assert_equal(Person, @person.class)
+  end
+
+  def test_person_name
+    assert_equal("Kara", @person.name)
   end
 
 end
