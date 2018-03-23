@@ -12,4 +12,8 @@ class Bus
     return "Forward, back, left, right"
   end
 
+  def passenger_count
+    return @passengers.length
+  end
+
 end

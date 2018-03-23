@@ -29,4 +29,8 @@ class BusTest < MiniTest::Test
     assert_equal("Forward, back, left, right", @bus.drive)
   end
 
+  def test_bus_starts_of_empty
+    assert_equal(0, @bus.passenger_count)
+  end
+
 end
