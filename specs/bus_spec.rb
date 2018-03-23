@@ -25,4 +25,8 @@ class BusTest < MiniTest::Test
     assert_equal("Seafield", @bus.destination)
   end
 
+  def test_bus_can_drive
+    assert_equal("Forward, back, left, right", @bus.drive)
+  end
+
 end

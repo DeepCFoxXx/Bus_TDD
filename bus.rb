@@ -8,4 +8,8 @@ class Bus
     @passengers = []
   end
 
+  def drive
+    return "Forward, back, left, right"
+  end
+
 end
