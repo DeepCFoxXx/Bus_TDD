@@ -16,4 +16,8 @@ class PersonTest < MiniTest::Test
     assert_equal("Kara", @person.name)
   end
 
+  def test_person_name
+    assert_equal(30, @person.age)
+  end
+
 end
