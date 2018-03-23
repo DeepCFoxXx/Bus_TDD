@@ -20,4 +20,10 @@ class Bus
     @passengers << person
   end
 
+  def drop_off(person)
+    index = @passengers.index(person)
+    @passengers.slice!(index, 1)
+  end
+
+
 end
